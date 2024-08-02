@@ -1,0 +1,25 @@
+{
+	"short_name": "Hossam Mahmoud",
+	"name": "Hossam Mahmoud - Frontend Developer Portfolio",
+	"icons": [
+		{
+			"src": "./Logo.png",
+			"sizes": "32x32 24x24 16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "./Logo.png",
+			"type": "image/png",
+			"sizes": "32x32"
+		},
+		{
+			"src": "./Logo.png",
+			"type": "image/png",
+			"sizes": "32x32"
+		}
+	],
+	"start_url": ".",
+	"display": "standalone",
+	"theme_color": "#000000",
+	"background_color": "#ffffff"
+}

@@ -1,0 +1,63 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+
+/* Set variables */
+:root {
+	/* text colors */
+	--red-text: #ff9a8d;
+	--white-text: #ffffff;
+	--gray-text: #d5d5d5;
+	--dark-gray-text: #9b9b9b;
+
+	/* icons colors */
+	--icons-colors: #aed6dc;
+	--person-icon: #2b303e;
+	--active-skill-green: #1e847f;
+
+	/* backgrounds colors */
+	--home-background: #4a536b;
+	/* --home-background: linear-gradient(180deg, #4a536b, #252525); */
+	--active-red-background-linear: linear-gradient(
+		180deg,
+		#ff9a8d00 0%,
+		#ff9a8d61 89.06%,
+		#ff9a8d82 100%
+	);
+	--black-background: #252525;
+	--second-black-background: #292929;
+	--gray-background: #4a536b7a;
+
+	--red-shadow: 0px 0px 27px -6px #ff9a8d;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* font-family: 'Rubik', sans-serif; */
+	/* font-family: 'PT Mono', monospace; */
+	font-family: 'Work Sans', sans-serif !important;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #252525;
+}
+
+a {
+	text-decoration: none;
+}
+
+.home ul li {
+	list-style-type: none;
+}
+
+button {
+	margin-top: 0 !important;
+}
