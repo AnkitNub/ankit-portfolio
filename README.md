@@ -1,6 +1,8 @@
 # Ankit Choudhary Portfolio
 
-This is my portfolio website showcasing my frontend development projects, experience, skills and, much more.
+This is my portfolio website showcasing my frontend development projects, experience, skills and, much more. 
+
+[Live site](https://ankitnub-portfolio.vercel.app/)
 
 ![Portfolio Screenshot](./src/assets/images/Screenshot.png)
 
@@ -12,7 +14,6 @@ This is my portfolio website showcasing my frontend development projects, experi
 - [Contributing](#contributing)
 - [About Me](#about-me)
 - [Get Started](#get-started)
-- [License](#license)
 - [Contact](#contact)
 
 ## Overview
