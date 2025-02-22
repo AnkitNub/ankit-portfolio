@@ -7,7 +7,7 @@
 /* Set variables */
 :root {
 	/* text colors */
-	--red-text: #ff9a8d;
+	--red-text: #c6c7cf;
 	--white-text: #ffffff;
 	--gray-text: #d5d5d5;
 	--dark-gray-text: #9b9b9b;
@@ -15,22 +15,22 @@
 	/* icons colors */
 	--icons-colors: #aed6dc;
 	--person-icon: #2b303e;
-	--active-skill-green: #1e847f;
+	--active-skill-green: #7b6fee;
 
 	/* backgrounds colors */
-	--home-background: #4a536b;
+	--home-background: #3e3b3e;
 	/* --home-background: linear-gradient(180deg, #4a536b, #252525); */
 	--active-red-background-linear: linear-gradient(
 		180deg,
 		#ff9a8d00 0%,
-		#ff9a8d61 89.06%,
-		#ff9a8d82 100%
+		#d4d4d461 89.06%,
+		#37b4c582 100%
 	);
 	--black-background: #252525;
 	--second-black-background: #292929;
 	--gray-background: #4a536b7a;
 
-	--red-shadow: 0px 0px 27px -6px #ff9a8d;
+	--red-shadow: 0px 0px 27px -6px #b56fef;
 }
 
 * {
@@ -47,7 +47,7 @@ html {
 }
 
 body {
-	background-color: #252525;
+	background-color: #50abec;
 }
 
 a {
