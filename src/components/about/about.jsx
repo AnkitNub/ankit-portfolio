@@ -4,7 +4,7 @@ import Heading from '../../utils/heading';
 import CustomButton from '../../utils/customButton';
 import { styled } from 'styled-components';
 import { data } from '../../data/aboutData';
-import CV from '../../assets/CV/webdev_ankit.pdf';
+import CV from '../../assets/CV/Ankit_choudhary.pdf';
 import { motion } from 'framer-motion';
 
 const CustomizeStack = styled(Stack)`
