@@ -1,3 +1,7 @@
+:root {
+  --purple-hover: #7b6fee; /* Define purple hover color */
+}
+
 .red-text {
   color: var(--red-text);
 }

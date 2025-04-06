@@ -31,7 +31,7 @@ const infoVariant = {
   visible: {
     transform: 'translateX(0%)',
     transition: {
-      delay: 1.5,
+      delay: 0.7,
       type: 'spring',
       duration: 1,
     },
@@ -45,7 +45,7 @@ const buttonVariant = {
   visible: {
     transform: 'translateY(0%)',
     transition: {
-      delay: 1.5,
+      delay: 0.7,
       type: 'spring',
       duration: 1,
     },
@@ -59,9 +59,9 @@ const sideVariant = {
   visible: {
     transform: 'scale(1)',
     transition: {
-      duration: 1,
+      duration: .7,
       type: 'spring',
-      delay: 1,
+      delay: .7,
     },
   },
 };

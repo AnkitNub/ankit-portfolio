@@ -30,7 +30,7 @@ const SytledlinksItems = styled.a`
   transition: all 0.2s linear;
 
   &:hover {
-    color: var(--white-text);
+    color: var(--active-skill-green);
   }
 `;
 
