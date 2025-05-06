@@ -21,8 +21,16 @@ const StyledConnector = styled(TimelineConnector)`
 
 const StyledContent = styled(TimelineContent)`
 	&& {
-		color: var(--white-text);
+		color: var(--text-primary);
 		cursor: pointer;
+		transition: all 0.3s ease;
+		padding: 10px 15px;
+		border-radius: 8px;
+		
+		&:hover {
+			background: rgba(255, 255, 255, 0.05);
+			color: var(--secondary-color);
+		}
 	}
 `;
 
@@ -96,11 +104,20 @@ const Skills = () => {
 					transition={{ duration: 1, delay: 0.4 }}
 					viewport={{ once: true }}
 					key={chosenSkill.id}
-					borderRadius="10px"
-					boxShadow="3px 3px 29px 0px rgba(255, 154, 141, 0.25)"
+					className="glass-effect"
 					sx={{
 						width: { xs: '100%', lg: '74%' },
 						padding: { xs: '2rem 1.5rem', lg: '3rem 5.5rem' },
+						background: 'rgba(255, 255, 255, 0.03)',
+						backdropFilter: 'blur(10px)',
+						borderRadius: '15px',
+						border: '1px solid rgba(255, 255, 255, 0.1)',
+						transition: 'all 0.3s ease-in-out',
+						'&:hover': {
+							border: '1px solid var(--secondary-color)',
+							transform: 'translateY(-5px)',
+							boxShadow: '0 20px 40px rgba(0, 0, 0, 0.2)'
+						}
 					}}>
 					<Stack
 						justifyContent="space-between"
