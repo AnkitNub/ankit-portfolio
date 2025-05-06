@@ -6,58 +6,105 @@
 
 /* Set variables */
 :root {
-	/* text colors */
-	--red-text: #c6c7cf;
-	--white-text: #ffffff;
-	--gray-text: #d5d5d5;
-	--dark-gray-text: #9b9b9b;
+  /* Modern Color Palette */
+  --primary-color: #4f46e5; /* Deep indigo */
+  --secondary-color: #06b6d4; /* Bright cyan */
+  --background-dark: #0f172a; /* Navy black */
+  --background-light: #1e293b; /* Deep slate */
+  --text-primary: #f1f5f9; /* Light slate */
+  --text-secondary: #94a3b8; /* Cool gray */
+  --accent-color: #10b981; /* Emerald */
+  --gradient-1: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
+  --gradient-2: linear-gradient(135deg, #10b981 0%, #4f46e5 100%);
+  --card-bg: rgba(30, 41, 59, 0.7);
+  --nav-bg: rgba(15, 23, 42, 0.9);
+  --box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3),
+    0 2px 4px -2px rgba(0, 0, 0, 0.3);
+  --hover-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4),
+    0 4px 6px -4px rgba(0, 0, 0, 0.4);
 
-	/* icons colors */
-	--icons-colors: #aed6dc;
-	--person-icon: #2b303e;
-	--active-skill-green: #7b6fee;
-
-	/* backgrounds colors */
-	--home-background: #3e3b3e;
-	/* --home-background: linear-gradient(180deg, #4a536b, #252525); */
-	--active-red-background-linear: linear-gradient(
-		180deg,
-		#ff9a8d00 0%,
-		#d4d4d461 89.06%,
-		#37b4c582 100%
-	);
-	--black-background: #252525;
-	--second-black-background: #292929;
-	--gray-background: #4a536b7a;
-
-	--red-shadow: 0px 0px 27px -6px #b56fef;
+  /* Replace existing color variables */
+  --red-text: var(--text-primary);
+  --white-text: var(--text-primary);
+  --gray-text: var(--text-secondary);
+  --dark-gray-text: var(--accent-color);
+  --icons-colors: var(--secondary-color);
+  --person-icon: var(--text-primary);
+  --active-skill-green: var(--accent-color);
+  --home-background: var(--background-dark);
+  --black-background: var(--background-dark);
+  --second-black-background: var(--background-light);
+  --red-shadow: 0px 0px 27px -6px var(--primary-color);
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	/* font-family: 'Rubik', sans-serif; */
-	/* font-family: 'PT Mono', monospace; */
-	font-family: 'Work Sans', sans-serif !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Rubik', sans-serif; */
+  /* font-family: 'PT Mono', monospace; */
+  font-family: 'Work Sans', sans-serif !important;
+  scroll-behavior: smooth;
 }
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-	background-color: #454748;
+  background-color: var(--background-dark);
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 
 .home ul li {
-	list-style-type: none;
+  list-style-type: none;
 }
 
 button {
-	margin-top: 0 !important;
+  margin-top: 0 !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-button {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Add glass-morphism effects */
+.glass-effect {
+  background: rgba(30, 41, 59, 0.5) !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(79, 70, 229, 0.1) !important;
+  box-shadow: var(--box-shadow) !important;
+}
+
+/* Add neon glow effect for certain hover states */
+.neon-glow {
+  transition: all 0.3s ease;
+}
+
+.neon-glow:hover {
+  box-shadow: 0 0 10px var(--secondary-color), 0 0 20px var(--secondary-color),
+    0 0 40px var(--secondary-color);
+}
+
+/* Modern scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
 }

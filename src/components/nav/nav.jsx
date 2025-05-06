@@ -8,6 +8,7 @@ const Sytledlinks = styled.ul`
   display: flex;
   gap: 3.2rem;
   align-items: center;
+
   @media (max-width: 1280px) {
     position: absolute;
     left: 0;
@@ -18,7 +19,8 @@ const Sytledlinks = styled.ul`
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-color: var(--person-icon);
+    background: var(--nav-bg);
+    backdrop-filter: blur(10px);
     transform: ${(props) =>
       props.clicked ? 'translateX(0)' : 'translateX(-100%)'};
     transition: all 0.3s linear;
@@ -26,11 +28,26 @@ const Sytledlinks = styled.ul`
 `;
 
 const SytledlinksItems = styled.a`
-  color: var(--red-text);
+  color: var(--text-primary);
   transition: all 0.2s linear;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background: var(--gradient-1);
+    transition: width 0.3s ease;
+  }
 
   &:hover {
-    color: var(--active-skill-green);
+    color: var(--primary-color);
+    &::after {
+      width: 100%;
+    }
   }
 `;
 
@@ -159,7 +176,7 @@ const Nav = () => {
           </li>
           <li>
             <SytledlinksItems href="#exed" onClick={handleLinkClick}>
-              Experience & Education
+              Experience
             </SytledlinksItems>
           </li>
           <li>
