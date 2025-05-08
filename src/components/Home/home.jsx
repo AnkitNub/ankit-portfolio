@@ -1,7 +1,6 @@
 import { Box, Stack, Typography } from '@mui/material';
 import React from 'react';
 import Nav from '../nav/nav';
-import PersonalImage from '../../assets/images/IMG_yphqhh222-removebg.png';
 import CustomButton from '../../utils/customButton';
 import { motion } from 'framer-motion';
 const myVariants = {
@@ -149,23 +148,6 @@ const Home = () => {
             />
           </motion.a>
         </Stack>
-
-        {/* <Box
-          className="personalImage"
-          sx={{ display: { xs: 'none', md: 'block' } }}
-        >
-          <motion.img
-            variants={imageVariants}
-            initial="hidden"
-            animate="visible"
-            style={{
-              filter: 'drop-shadow(2px 4px 12px rgba(0,0,0,0.50))',
-              width: '100%',
-            }}
-            src={PersonalImage}
-            alt="Hossam Mahmoud"
-          />
-        </Box> */}
       </Stack>
     </Box>
   );
