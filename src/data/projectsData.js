@@ -3,6 +3,17 @@ import { icons } from '../utils/icons';
 export const projData = [
   {
     id: 12,
+    name: 'Kabe Share',
+    describtion:
+      'Kabe Share is a modern wall art marketplace built with React.js and Redux, attracting 50+ daily active users. It features a custom CMS for sellers to manage portfolios, boosting content uploads by 30%. An interactive, gamified comment system with point-based rewards significantly increased user engagement by 45%. The platform includes a reusable component library and responsive design for a consistent experience across all devices.',
+    languages: [icons.react, icons.javascript, icons.redux, icons.css],
+    image: 'kabe_share.jpg',
+    link: 'https://kabe-gallery-final.vercel.app/',
+    gitLink: '#',
+    done: true,
+  },
+  {
+    id: 12,
     name: 'The Culminator',
     describtion:
       "TheCulminator is a modern job portal crafted with React, providing an intuitive platform for job seekers and employers. It features dynamic search capabilities, user-friendly interfaces, and seamless job application processes, all built with React's powerful component system.",

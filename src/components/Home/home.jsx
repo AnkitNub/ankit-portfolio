@@ -130,7 +130,7 @@ const Home = () => {
               initial="hidden"
               animate="visible"
             >
-              I am a frontend web developer
+              I am a Fullstack developer
             </Typography>
           </Stack>
           <motion.a

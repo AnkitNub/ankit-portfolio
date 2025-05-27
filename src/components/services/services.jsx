@@ -8,8 +8,7 @@ import { motion } from 'framer-motion';
 const StyledStack = styled(Stack)`
   && {
     padding: 4rem 5rem;
-    align-items: center;
-    text-align: center;
+    align-items: center; // Changed to center for icon alignment
     gap: 2rem;
     background-color: var(--second-black-background);
     color: var(--white-text);
@@ -17,9 +16,21 @@ const StyledStack = styled(Stack)`
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
+    svg {
+      width: 100%; // Added to ensure icon takes full width
+      display: flex; // Added for better centering
+      justify-content: center; // Added for horizontal centering
+      transition: all 0.3s ease-in-out;
+      fill: var(--secondary-color);
+    }
+
     &:hover {
       transform: scale(1.02);
       box-shadow: 0px 0px 15px 5px var(--purple-hover);
+    }
+
+    &:hover svg {
+      transform: scale(1.1);
     }
   }
 
@@ -28,16 +39,6 @@ const StyledStack = styled(Stack)`
       padding: 2rem 1rem;
       gap: 1.3rem;
     }
-  }
-
-  /* Add icon animation */
-  svg {
-    transition: all 0.3s ease-in-out;
-    fill: var(--secondary-color);
-  }
-
-  &:hover svg {
-    transform: scale(1.1);
   }
 `;
 
@@ -78,6 +79,8 @@ const Services = () => {
                 color="var(--white-text)"
                 fontSize="1.8rem"
                 marginBottom="0.5rem"
+                textAlign="center"
+                width="100%"
               >
                 {el.name}
               </Typography>
@@ -88,7 +91,7 @@ const Services = () => {
                   letterSpacing: '2px',
                   lineHeight: { xs: '1.7', sm: '1.8', lg: '2' },
                   maxWidth: '400px',
-                  margin: '0 auto',
+                  textAlign: 'left',
                   overflow: 'hidden',
                 }}
               >
