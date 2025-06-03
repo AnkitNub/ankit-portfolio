@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 const StyledButton = styled(Button)`
   && {
     padding: 10px 13px;
-    background: linear-gradient(45deg, #02022b 35%, #353548 90%);
+    background: linear-gradient(45deg, #111 35%, #222 90%);
     // box-shadow: 0px 0px 6px 2px rgb(255 255 255 / 29%),
     // 	0px 0px 6px 2px rgb(57 6 64 / 47%);
     transition: all 0.2s linear;

@@ -60,7 +60,7 @@ const ShowMoreButton = styled(Button)`
 
 const ProjectCard = styled(Stack)`
   padding: 2.5rem;
-  background: var(--card-bg);
+  background: #313131; /* Changed to #313131 */
   border-radius: 16px;
   transition: all 0.4s ease-in-out;
   border: 1px solid rgba(79, 70, 229, 0.1);

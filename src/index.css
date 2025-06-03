@@ -6,35 +6,35 @@
 
 /* Set variables */
 :root {
-  /* Modern Color Palette */
-  --primary-color: #4f46e5; /* Deep indigo */
-  --secondary-color: #06b6d4; /* Bright cyan */
-  --background-dark: #0f172a; /* Navy black */
-  --background-light: #1e293b; /* Deep slate */
-  --text-primary: #f1f5f9; /* Light slate */
-  --text-secondary: #94a3b8; /* Cool gray */
-  --accent-color: #10b981; /* Emerald */
-  --gradient-1: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
-  --gradient-2: linear-gradient(135deg, #10b981 0%, #4f46e5 100%);
-  --card-bg: rgba(30, 41, 59, 0.7);
-  --nav-bg: rgba(15, 23, 42, 0.9);
-  --box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3),
-    0 2px 4px -2px rgba(0, 0, 0, 0.3);
-  --hover-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4),
-    0 4px 6px -4px rgba(0, 0, 0, 0.4);
+  /* Black & Grey Color Palette */
+  --primary-color: #222; /* Dark grey */
+  --secondary-color: #444; /* Medium grey */
+  --background-dark: #111; /* Almost black */
+  --background-light: #222; /* Dark grey */
+  --text-primary: #fff; /* White */
+  --text-secondary: #bbb; /* Light grey */
+  --accent-color: #888; /* Accent grey */
+  --gradient-1: linear-gradient(135deg, #222 0%, #444 100%);
+  --gradient-2: linear-gradient(135deg, #444 0%, #222 100%);
+  --card-bg: rgba(40, 40, 48, 0.85); /* Was rgba(34, 34, 34, 0.7) */
+  --nav-bg: rgba(17, 17, 17, 0.95);
+  --box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.7),
+    0 2px 4px -2px rgba(0, 0, 0, 0.7);
+  --hover-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.8),
+    0 4px 6px -4px rgba(0, 0, 0, 0.8);
 
   /* Replace existing color variables */
   --red-text: var(--text-primary);
   --white-text: var(--text-primary);
   --gray-text: var(--text-secondary);
   --dark-gray-text: var(--accent-color);
-  --icons-colors: var(--secondary-color);
+  --icons-colors: var(--accent-color);
   --person-icon: var(--text-primary);
-  --active-skill-green: var(--accent-color);
+  --active-skill-green: var(--secondary-color);
   --home-background: var(--background-dark);
   --black-background: var(--background-dark);
   --second-black-background: var(--background-light);
-  --red-shadow: 0px 0px 27px -6px var(--primary-color);
+  --red-shadow: 0px 0px 27px -6px var(--secondary-color);
 }
 
 * {

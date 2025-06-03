@@ -14,8 +14,8 @@ const StyledMessage = styled(Box)`
   transform: translate(-50%, -50%);
   min-width: 300px;
   max-width: 410px;
-  background: linear-gradient(45deg, #02022b 35%, #353548 90%);
-  color: white;
+  background: linear-gradient(45deg, #111 35%, #222 90%);
+  color: var(--white-text);
   text-align: center;
   padding: 3rem 2rem;
   border-radius: 1rem;

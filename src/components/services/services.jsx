@@ -10,7 +10,7 @@ const StyledStack = styled(Stack)`
     padding: 4rem 5rem;
     align-items: center; // Changed to center for icon alignment
     gap: 2rem;
-    background-color: var(--second-black-background);
+    background-color: #313131; /* Changed to #313131 */
     color: var(--white-text);
     border-radius: 15px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);

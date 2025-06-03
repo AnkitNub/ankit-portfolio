@@ -59,9 +59,9 @@ const sideVariant = {
   visible: {
     transform: 'scale(1)',
     transition: {
-      duration: .7,
+      duration: 0.7,
       type: 'spring',
-      delay: .7,
+      delay: 0.7,
     },
   },
 };
@@ -134,10 +134,10 @@ const About = () => {
               </span>
             </h3>
             <p>
-              I'm a junior frontend developer, I am dedicated to crafting
-              engaging and user-centric web experiences. I possess a robust
-              foundation in HTML, CSS, and JavaScript, and I am adept at
-              translating designs into intuitive, interactive interfaces.
+              I'm a Fullstack Developer, I am dedicated to crafting engaging and
+              user-centric web experiences. I possess a robust foundation in
+              JavaScript, React and Next.js and I am adept at translating
+              designs into intuitive, interactive interfaces.
             </p>
             <br></br>
             <p>
@@ -154,7 +154,6 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            download="Ankit Webdev CV"
             target="_blank"
             rel="noreferrer"
             style={{ width: 'fit-content' }}
@@ -164,7 +163,7 @@ const About = () => {
               beforeBgColorHover="transparent"
               hoverColor="var(--white-text)"
               textColor="black"
-              content="Download my CV"
+              content="View Resume"
             ></CustomButton>
           </motion.a>
         </Stack>
